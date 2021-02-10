@@ -1,0 +1,196 @@
+.course-area{
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @include lg {
+    padding-top: 75px;
+    padding-bottom: 100px;
+  }
+}
+
+.nav-pills{
+  margin-bottom: 45px;
+}
+
+.nav-pills .nav-link {
+  font-size: 16px;
+  margin-right: 5px;
+
+  @include md {
+    font-size: 22px;
+    margin-right: 15px;
+  }
+
+  img {
+    margin-right: 10px;
+  }
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+	color: #0F055E;
+  background-color: transparent;
+  font-weight: 700;  
+}
+
+.tab-content{
+  .pt-100{
+    padding-top: 50px;
+    
+    @include lg {
+      padding-top: 70px;
+    }
+
+    @include xl {
+      padding-top: 100px;
+    }
+  }
+}
+
+.course-content {
+	background: #F8F6F4;
+  border-radius: 8px;
+  @include shadow(0, 10px, 10px, #F39200, 0.26);
+  padding: 20px 30px;
+
+  h3 {
+    font-size: 22px;
+    color: #0F055E;
+    margin-bottom: 15px;
+  }
+}
+
+.course-list {
+  // display: flex;
+  padding: 0;
+
+  ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      display: inline-block;
+    }
+  }
+}
+
+.course-item{
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  padding-left: 20px;
+  margin-top: 10px;
+  font-size: 13px;
+
+  @include before{
+    content: "";
+    @include absolute(top 8px left 0);
+    @include size(10px);
+    background: $blue;
+    border-radius: 50%;
+  }
+
+  @include md {
+    width: 49%;
+  }
+}
+
+.course-title, .course-rating{
+  color: $yellow;
+}
+
+.course-title{
+  font-size: 16px;
+}
+
+.widget-title{
+  font-size: 22px;
+  color: $yellow;
+  margin-bottom: 60px;
+  margin-top: 50px;
+
+  @include lg {
+    margin-top: 0;
+  }
+}
+
+.sidebar{
+  background: $white;
+  @include shadow(0, 10px, 6px, #000000, 16%);
+  padding: 50px 25px;
+}
+
+.sidebar-post-item{
+  display: block;
+  @include shadow(0, 3px, 6px, #000000, 16%);
+
+  &.mt-50 {
+    margin-top: 35px;
+  }
+
+  .post-img{
+    width: 100%;
+
+    @include xl {
+      width: 35%;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .post-content{
+    padding: 30px 20px;
+
+    h4{
+      font-size: 16px;
+    }
+
+    p{
+      font-size: 14px;
+      color: #707070;
+      margin-bottom: 0;
+    }
+  }
+
+  @include xl {
+    display: flex;
+    align-items: center;
+
+    .post-content{
+      width: 65%;
+      padding-left: 10px;
+    }
+  }
+}
+
+.contact-area{
+  padding-top: 50px;
+  
+  @include lg {
+    padding-top: 100px;
+
+  }
+}
+
+.contact-item{
+  text-align: center;
+  padding: 20px 30px;
+
+  @include md {
+    padding:20px 0;
+  }
+
+  i{
+    color: #05056B;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  span{
+    color: #575A5A;
+    margin-bottom: 5px;
+    display: block;
+  }
+}

@@ -1,0 +1,85 @@
+.filter-area{
+  @include relative(top 0 left 0 right 0);
+  margin: auto;
+  width:100%;
+  max-width: 1382px;
+  border-radius: 5px;
+  @include shadow(0, 15px, 30px, #000000, 0.16);
+}
+
+.filter-item {
+  display: block;
+  padding: 35px 0;
+
+  @include md {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  li {
+    display: inline-block;
+  }
+}
+
+.nice-select{
+  background-color: transparent;
+  color: $white;
+  border-color: transparent;
+  padding-left: 0;
+
+  @include md {
+    padding-left: 10px;
+  }
+
+  @include after{
+    border-bottom: 2px solid $yellow;
+    border-right: 2px solid $yellow;
+    @include size(10px);
+    top: 45%;
+  }
+
+  .list {
+    li {
+      display: block;
+      color: $black;
+    }
+  }
+}
+
+.filter-button{
+  li {
+    margin-right: 15px;
+
+    a{
+      color:$white;
+      margin-top: 20px;
+      display: block;
+
+      @include md {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.btn-outline{
+  border: 1px solid $yellow;
+  color: $white;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 5px;
+  @include property;
+  height: 45px;
+  line-height: 45px;
+
+  @include lg {
+    height: 60px;
+    line-height: 60px;
+  }
+
+  @include hover{
+    background: $yellow;
+    color: $white;
+  }
+}
